@@ -19,6 +19,8 @@ Happy exploring!
 
 ## Getting Started
 
+cd pokemon-explorer
+
 First, run the development server:
 
 ```bash
