@@ -21,7 +21,7 @@ interface PokemonDetailPageProps {
 }
 
 export default async function PokemonDetailPage({ params }: PokemonDetailPageProps) {
-  const { id } = await params;
+  const { id } = params;
 
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
   const pokemon: PokemonDetail = await res.json();
