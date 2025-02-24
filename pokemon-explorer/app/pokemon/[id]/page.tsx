@@ -15,13 +15,13 @@ interface PokemonDetail {
 }
 
 interface PokemonDetailPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function PokemonDetailPage({ params }: PokemonDetailPageProps) {
-  const { id } = params;
+  const { id } = await params;
 
   const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
   const pokemon: PokemonDetail = await res.json();
