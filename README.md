@@ -21,6 +21,8 @@ Happy exploring!
 
 cd pokemon-explorer
 
+npm install
+
 First, run the development server:
 
 ```bash
